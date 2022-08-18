@@ -7,6 +7,7 @@ Repo to keep notes regarding my airflow learning journey.
 
 **dag_id** is the name of the DAG displayed in the Airflow UI
 **start_date** is the datetime in which the workflow should start running
+**schedule_interval** allows to run at certain intervals (@daily, @monthly, @hourly, @once, @weekly, @yearly)
 
 ### Operators
 > An operator performs a single unit of work, runs independly of other operators.
@@ -14,8 +15,8 @@ Repo to keep notes regarding my airflow learning journey.
 Dependendies between operators is set by '>>'. 
 
 Some examples of operators are:
-- BashOperator
-- PythonOperator
+- BashOperator: run linux commands
+- PythonOperator: run arbiratry python code
 
 
 ## Install Airflow locally
@@ -61,5 +62,12 @@ apache/airflow:2.0.0-python3.8 \
 airflow webserver & airflow scheduler'
 
 ```
+
+## Remember
+- DAGs help us to represent workflows
+- Operators are a single unit of working 
+- Execution date is 'start date + schedule interval'
+- Airflow allows us to use cron-based intervals "min hour day month aday_week"
+
 
 
