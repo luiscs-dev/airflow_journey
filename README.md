@@ -63,11 +63,20 @@ airflow webserver & airflow scheduler'
 
 ```
 
+### Jinja templates
+Parameters:
+	- execution_date: timestamp
+	- next_execution_date: timestamp
+	- ds: YYYY-MM-DD 
+	- next_ds: same format as ds
+
+
+
 ## Remember
 - DAGs help us to represent workflows
 - Operators are a single unit of working 
 - Execution date is 'start date + schedule interval'
 - Airflow allows us to use cron-based intervals "min hour day month aday_week"
-
+- Airflow allows us to use frequency-based intervals "every three days (timedelta(days=3))"
 
 
