@@ -6,7 +6,9 @@ Repo to keep notes regarding my airflow learning journey.
 > A DAG is responsable for orchestrate the execution of a collection of operators.
 
 **dag_id** is the name of the DAG displayed in the Airflow UI
+
 **start_date** is the datetime in which the workflow should start running
+
 **schedule_interval** allows to run at certain intervals (@daily, @monthly, @hourly, @once, @weekly, @yearly)
 
 ### Operators
